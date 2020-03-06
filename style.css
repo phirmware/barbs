@@ -1,0 +1,84 @@
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.jumbo-cover {
+    background: #daffed;
+}
+
+.jumbo-cover>.jumbotron {
+    font-weight: bold;
+    background: #daffed;
+}
+
+.landing {
+    min-height: 65vh;
+}
+
+.btn-success {
+    border: 1px solid rgb(3, 77, 3);
+    background: #004d29;
+    color: #fff;
+}
+
+.btn-action {
+    position: relative;
+    height: 52px;
+    width: 214px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn-login {
+    color: rgb(187, 123, 3);
+    background: rgb(248, 211, 143);
+    font-weight: bold;
+}
+
+.btn-signup {
+    color: white;
+    font-weight: bold;
+}
+
+.how-it-works {
+    background: rgb(240, 255, 248);
+}
+
+.how-it-works>.jumbotron {
+    background: rgb(240, 255, 248);
+}
+
+.how-list {
+    color: green;
+}
+
+.how-list>li {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.p-why {
+    font-size: 19px;
+    font-family: "Varela Round";
+    line-height: 40px;
+}
+
+.why-card {
+    margin-right: 40px;
+    background-color: #fff;
+    width: 70.5%;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 2px 70px -10px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    padding-bottom: 5%;
+}
+
+.card-text{
+    font-family: "Varela Round";
+    width: 60%;
+}
