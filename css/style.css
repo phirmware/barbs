@@ -1,3 +1,82 @@
+:root{
+    --bg_green: #daffed;
+    --primary_green: #004d29;
+    --secondary_green: #69f0ae;
+}
+
+.section_padding{
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+.default_btn{
+    padding: 0.6em 1em;
+    background: var(--primary_green);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 0;
+}
+
+.green_text{
+    color: var(--primary_green) !important;
+}
+
+/**signup**/
+.signup{
+    background: url('../assets/images/signup_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+
+}
+
+.signup_card_holder{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup_card{
+    width: 90%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    min-height: 70vh;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form_holder{
+    padding: 1em 1.5em;
+}
+
+.form_element input{
+    border: none;
+    background: transparent;
+    padding: 0.6em  1em;
+    width: 90%;
+    border-bottom: 2px solid #daffda;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+.signup_text_holder{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.signup_text_holder h1{
+    color: #f5f5f5;
+    font-size: 50px;
+    text-align: justify;
+}
+
+.login_link{
+    text-align: center;
+}
+
 .nav-link {
     color: black;
     font-weight: bold;
@@ -89,15 +168,17 @@
     height: 100%;
 }
 
-input {
-    /* background: lightgreen !important; */
-    border: none !important;
-    padding: 25px !important;
-}
 
 .register-header {
     font-weight: bold;
     font-size: 30px;
     color: rgb(13, 59, 13);
     text-transform: uppercase
+}
+
+@media screen and (max-width: 996px){
+    .section_padding{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
 }
