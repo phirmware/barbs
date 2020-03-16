@@ -2,6 +2,33 @@
     --bg_green: #daffed;
     --primary_green: #004d29;
     --secondary_green: #69f0ae;
+    --header_font: 'Sen', sans-serif;
+    --text_font:  'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: var(--header_font);
+}
+
+a,
+input,
+button,
+span,
+p,
+textarea{
+    font-family: var(--text_font);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .section_padding{
@@ -10,18 +37,91 @@
 }
 
 .default_btn{
-    padding: 0.6em 1em;
+    padding: 0.6em 1.5em;
     background: var(--primary_green);
-    font-size: 16px;
-    color: #fff;
-    border-radius: 10px;
+    font-size: 20px;
+    color: #f5f5f5;
     transition: all 0.3s ease;
     border: 0;
+    box-shadow: 10px 7px 0px 0px rgb(86, 137, 125, 0.5);
+}
+
+.default_btn:hover{
+    box-shadow: 0px 0px 0px 0px;
+    color: #f5f5f5;
 }
 
 .green_text{
     color: var(--primary_green) !important;
 }
+
+.fixed_nav{
+    position: fixed;
+    background: #fff;
+    z-index: 9999;
+    width: 100%;
+    box-shadow: 6px 2px 12px 7px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.fixed_nav .nav_link_holder .nav_link a{
+    color: var(--primary_green);
+}
+
+/*navigation*/
+nav{
+    padding: 1em;
+}
+
+.nav_link_holder{
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link_holder .nav_link{
+    padding: 0 0.7em;
+}
+
+.nav_link_holder .nav_link a{
+    color: #f5f5f5;
+    font-size: 18px;
+}
+
+/*hero*/
+.hero{
+    min-height: 90vh;
+    background: url("../assets/images/signup_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_text_holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.hero_text{
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.hero_text h1{
+    font-size: 60px;
+}
+
+.hero_text p{
+    font-size: 20px;
+}
+
+/**about section***/
+.about_text_holder{
+    padding: 0 1.2em;
+    text-align: center;
+}
+
 
 /**signup**/
 .signup{
