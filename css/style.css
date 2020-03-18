@@ -1,16 +1,16 @@
-:root{
+:root {
     --bg_green: #daffed;
     --primary_green: #004d29;
     --secondary_green: #69f0ae;
     --header_font: 'Sen', sans-serif;
-    --text_font:  'Poppins', sans-serif;
+    --text_font: 'Poppins', sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
     font-family: var(--header_font);
 }
 
@@ -19,24 +19,28 @@ input,
 button,
 span,
 p,
-textarea{
+textarea {
     font-family: var(--text_font);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-.section_padding{
+.section_padding {
     padding-right: 5em;
     padding-left: 5em;
 }
 
-.default_btn{
+.v_align{
+    text-align: center;
+}
+
+.default_btn {
     padding: 0.6em 1.5em;
     background: var(--primary_green);
     font-size: 20px;
@@ -46,16 +50,16 @@ a:hover{
     box-shadow: 10px 7px 0px 0px rgb(86, 137, 125, 0.5);
 }
 
-.default_btn:hover{
+.default_btn:hover {
     box-shadow: 0px 0px 0px 0px;
     color: #f5f5f5;
 }
 
-.green_text{
+.green_text {
     color: var(--primary_green) !important;
 }
 
-.fixed_nav{
+.fixed_nav {
     position: fixed;
     background: #fff;
     z-index: 9999;
@@ -64,31 +68,31 @@ a:hover{
     transition: all 0.5s ease;
 }
 
-.fixed_nav .nav_link_holder .nav_link a{
+.fixed_nav .nav_link_holder .nav_link a {
     color: var(--primary_green);
 }
 
 /*navigation*/
-nav{
+nav {
     padding: 1em;
 }
 
-.nav_link_holder{
+.nav_link_holder {
     display: flex;
     justify-content: center;
 }
 
-.nav_link_holder .nav_link{
+.nav_link_holder .nav_link {
     padding: 0 0.7em;
 }
 
-.nav_link_holder .nav_link a{
+.nav_link_holder .nav_link a {
     color: #f5f5f5;
     font-size: 18px;
 }
 
 /*hero*/
-.hero{
+.hero {
     min-height: 90vh;
     background: url("../assets/images/signup_bg.png");
     background-position: center;
@@ -96,49 +100,51 @@ nav{
     background-size: cover;
 }
 
-.hero_text_holder{
+.hero_text_holder {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 70vh;
 }
 
-.hero_text{
+.hero_text {
     color: #f5f5f5;
     text-align: center;
 }
 
-.hero_text h1{
+.hero_text h1 {
     font-size: 60px;
 }
 
-.hero_text p{
+.hero_text p {
     font-size: 20px;
 }
 
 /**about section***/
-.about_text_holder{
+.about_text_holder {
     padding: 0 1.2em;
     text-align: center;
 }
 
 
+
+
 /**signup**/
-.signup{
+.signup {
     background: url('../assets/images/signup_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh; 
+    min-height: 100vh;
 
 }
 
-.signup_card_holder{
+.signup_card_holder {
     display: flex;
     align-items: center;
     height: 100vh;
 }
 
-.signup_card{
+.signup_card {
     width: 90%;
     margin: 0 auto;
     background: #f5f5f5;
@@ -146,14 +152,14 @@ nav{
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form_holder{
+.form_holder {
     padding: 1em 1.5em;
 }
 
-.form_element input{
+.form_element input {
     border: none;
     background: transparent;
-    padding: 0.6em  1em;
+    padding: 0.6em 1em;
     width: 90%;
     border-bottom: 2px solid #daffda;
     outline: none;
@@ -161,19 +167,19 @@ nav{
     transition: all 0.2s ease-in-out;
 }
 
-.signup_text_holder{
+.signup_text_holder {
     display: flex;
     align-items: center;
     height: 80vh;
 }
 
-.signup_text_holder h1{
+.signup_text_holder h1 {
     color: #f5f5f5;
     font-size: 50px;
     text-align: justify;
 }
 
-.login_link{
+.login_link {
     text-align: center;
 }
 
@@ -276,9 +282,40 @@ nav{
     text-transform: uppercase
 }
 
-@media screen and (max-width: 996px){
-    .section_padding{
+@media screen and (max-width: 996px) {
+    .section_padding {
         padding-right: 2em;
         padding-left: 2em;
+    }
+
+    .nav_link_holder {
+        display: none;
+    }
+
+    .default_btn {
+        font-size: 18px;
+    }
+
+    .hero_text h1 {
+        font-size: 50px;
+    }
+
+    .hero_text p {
+        font-size: 18px;
+    }
+
+    .section_head{
+        text-align: center;
+    }
+
+
+    .about_text_holder{
+        padding: 0;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .about_text_holder h3{
+        font-size: 25px;
     }
 }

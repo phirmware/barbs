@@ -1,4 +1,4 @@
-$(window).scroll(function() {
+$(window).on("scroll", function() {
     if ($(this).scrollTop() > 100) {
         $('nav').fadeIn('500', function(){
             $('nav').addClass('fixed_nav');
@@ -6,7 +6,7 @@ $(window).scroll(function() {
     } else {
       $('nav').removeClass('fixed_nav');
     }
-  });
+});
 
 $(".show").on("click", function () {
     if($(".password").attr("type") == "password"){
