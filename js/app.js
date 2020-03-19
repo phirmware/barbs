@@ -1,10 +1,10 @@
 $(window).on("scroll", function() {
     if ($(this).scrollTop() > 100) {
-        $('nav').fadeIn('500', function(){
-            $('nav').addClass('fixed_nav');
-        });  
+        $('nav').addClass('fixed_nav');
+        $('.top').addClass('show'); 
     } else {
       $('nav').removeClass('fixed_nav');
+      $('.top').removeClass('show'); 
     }
 });
 

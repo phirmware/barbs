@@ -6,6 +6,10 @@
     --text_font: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -72,6 +76,25 @@ a:hover {
     color: var(--primary_green);
 }
 
+.top{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    background-color: var(--primary_green);
+    padding: 1em;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.top i{
+    color: #fff;
+    font-size: 25px;
+}
+
+.show{
+    opacity: 1 !important;
+}
+
 /*navigation*/
 nav {
     padding: 1em;
@@ -126,6 +149,54 @@ nav {
     text-align: center;
 }
 
+.services{
+    background-color: var(--bg_green);
+}
+
+.services_content_holder{
+    padding: 0 1em;
+}
+
+.service_icon{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--primary_green);
+    padding: 1em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_icon i{
+    font-size: 30px;
+    color: #f5f5f5;
+}
+
+/**price list**/
+.price_text_holder{
+    padding: 2em;
+}
+
+.price_element{
+    display: flex;
+    width: 100%;
+}
+
+.price_element hr{
+    border-top: 1px dashed var(--primary_green);
+    width: 70%;
+    margin-top: 10px;
+}
+
+.price_element span{
+    color: var(--primary_green);
+}
+
+.price_img_holder{
+    padding: 1em;
+}
 
 
 
@@ -181,105 +252,6 @@ nav {
 
 .login_link {
     text-align: center;
-}
-
-.nav-link {
-    color: black;
-    font-weight: bold;
-}
-
-.jumbo-cover {
-    background: #daffed;
-}
-
-.jumbo-cover>.jumbotron {
-    font-weight: bold;
-    background: #daffed;
-}
-
-.landing {
-    min-height: 65vh;
-}
-
-.btn-success {
-    border: 1px solid rgb(3, 77, 3);
-    background: #004d29;
-    color: #fff;
-}
-
-.btn-action {
-    position: relative;
-    height: 52px;
-    width: 214px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 4px;
-}
-
-.btn-login {
-    color: rgb(187, 123, 3);
-    background: rgb(248, 211, 143);
-    font-weight: bold;
-}
-
-.btn-signup {
-    color: white;
-    font-weight: bold;
-}
-
-.how-it-works {
-    background: rgb(240, 255, 248);
-}
-
-.how-it-works>.jumbotron {
-    background: rgb(240, 255, 248);
-}
-
-.how-list {
-    color: green;
-    list-style: none;
-}
-
-.how-list>li {
-    font-size: 20px;
-    line-height: 50px;
-}
-
-.p-why {
-    font-size: 19px;
-    font-family: "Varela Round";
-    line-height: 40px;
-}
-
-.why-card {
-    margin-right: 40px;
-    background-color: #fff;
-    width: 70.5%;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0 2px 70px -10px rgba(0, 0, 0, .2);
-    overflow: hidden;
-    padding-bottom: 5%;
-}
-
-.card-text {
-    font-family: "Varela Round";
-    width: 60%;
-}
-
-.cart>img {
-    width: 100%;
-    height: 100%;
-}
-
-
-.register-header {
-    font-weight: bold;
-    font-size: 30px;
-    color: rgb(13, 59, 13);
-    text-transform: uppercase
 }
 
 @media screen and (max-width: 996px) {
