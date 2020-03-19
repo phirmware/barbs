@@ -8,6 +8,15 @@ $(window).on("scroll", function() {
     }
 });
 
+$(".counter_holder")
+        $(".demo").animationCounter({
+            start: 0,
+            end: 50,
+            step: 2,
+            delay: 50,
+            txt:  " +"
+        });
+
 $(".show").on("click", function () {
     if($(".password").attr("type") == "password"){
         $(".password").attr("type", "text");
@@ -18,13 +27,3 @@ $(".show").on("click", function () {
 });
 
   
-jQuery(".owl-carousel").owlCarousel({
-    dots:true,
-    center: true,
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    items: 3,
-});

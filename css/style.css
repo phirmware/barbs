@@ -198,6 +198,58 @@ nav {
     padding: 1em;
 }
 
+/***how it works***/
+.how_card{
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 0.5em;
+}
+
+.how_card:hover .num_holder{
+    background-color: var(--primary_green);
+}
+
+.how_card:hover .num_holder span{
+    color: #f5f5f5;
+}
+
+.how_card_content{
+    padding: 1em;
+}
+
+.num_holder{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--primary_green);
+    padding: 1em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.num_holder span{
+    color: var(--primary_green);
+    font-size: 25px;
+}
+
+
+
+/***cta**/
+.contact{
+   background-color: var(--bg_green);
+}
+
+.contact .form_element input{
+    border-bottom: 2px solid var(--primary_green);
+}
+
+.contact .form_element textarea{
+    border: 2px solid var(--primary_green);
+    min-height: 35vh;
+}
 
 
 /**signup**/
@@ -227,7 +279,8 @@ nav {
     padding: 1em 1.5em;
 }
 
-.form_element input {
+.form_element input,
+.form_element textarea {
     border: none;
     background: transparent;
     padding: 0.6em 1em;
