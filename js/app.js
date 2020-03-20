@@ -8,7 +8,6 @@ $(window).on("scroll", function() {
     }
 });
 
-$(".counter_holder")
         $(".demo").animationCounter({
             start: 0,
             end: 50,

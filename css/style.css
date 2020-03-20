@@ -6,7 +6,7 @@
     --text_font: 'Poppins', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -40,7 +40,7 @@ a:hover {
     padding-left: 5em;
 }
 
-.v_align{
+.v_align {
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ a:hover {
     color: var(--primary_green);
 }
 
-.top{
+.top {
     position: fixed;
     right: 30px;
     bottom: 50px;
@@ -86,12 +86,12 @@ a:hover {
     transition: all 0.5s ease-in;
 }
 
-.top i{
+.top i {
     color: #fff;
     font-size: 25px;
 }
 
-.show{
+.show {
     opacity: 1 !important;
 }
 
@@ -112,6 +112,25 @@ nav {
 .nav_link_holder .nav_link a {
     color: #f5f5f5;
     font-size: 18px;
+}
+
+/***mobile navigation**/
+.mobile_nav_holder{
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.closebtn{
+    font-size: 30px;
+    color: red;
+    position: relative;
+    left:  85%;
+    top: 1em;
 }
 
 /*hero*/
@@ -149,104 +168,115 @@ nav {
     text-align: center;
 }
 
-.services{
+.services {
     background-color: var(--bg_green);
 }
 
-.services_content_holder{
+.services_content_holder {
     padding: 0 1em;
 }
 
-.service_icon{
+.service_icon {
     margin: 0 auto;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: var(--primary_green);
-    padding: 1em; 
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.service_icon i{
+.service_icon i {
     font-size: 30px;
     color: #f5f5f5;
 }
 
 /**price list**/
-.price_text_holder{
+.price_text_holder {
     padding: 2em;
 }
 
-.price_element{
+.price_element {
     display: flex;
     width: 100%;
 }
 
-.price_element hr{
+.price_element hr {
     border-top: 1px dashed var(--primary_green);
     width: 70%;
     margin-top: 10px;
 }
 
-.price_element span{
+.price_element span {
     color: var(--primary_green);
 }
 
-.price_img_holder{
+.price_img_holder {
     padding: 1em;
 }
 
 /***how it works***/
-.how_card{
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+.how_card {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
     padding: 0 0.5em;
 }
 
-.how_card:hover .num_holder{
+.how_card:hover .num_holder {
     background-color: var(--primary_green);
 }
 
-.how_card:hover .num_holder span{
+.how_card:hover .num_holder span {
     color: #f5f5f5;
 }
 
-.how_card_content{
+.how_card_holder {
+    padding: 0 3em;
+}
+
+.how_card_content {
     padding: 1em;
 }
 
-.num_holder{
+.num_holder {
     margin: 0 auto;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid var(--primary_green);
-    padding: 1em; 
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
 
-.num_holder span{
+.num_holder span {
     color: var(--primary_green);
     font-size: 25px;
 }
 
 
-
-/***cta**/
-.contact{
-   background-color: var(--bg_green);
+.counter_holder {
+    min-height: 30vh;
 }
 
-.contact .form_element input{
+.counter_item h1 {
+    font-size: 50px;
+}
+
+/***cta**/
+.contact {
+    background-color: var(--bg_green);
+}
+
+.contact .form_element input {
     border-bottom: 2px solid var(--primary_green);
 }
 
-.contact .form_element textarea{
+.contact .form_element textarea {
     border: 2px solid var(--primary_green);
     min-height: 35vh;
 }
@@ -329,18 +359,53 @@ nav {
         font-size: 18px;
     }
 
-    .section_head{
+    .section_head {
         text-align: center;
     }
 
 
-    .about_text_holder{
+    .about_text_holder {
         padding: 0;
         text-align: left;
         margin-top: 20px;
     }
 
-    .about_text_holder h3{
+    .about_text_holder h3 {
         font-size: 25px;
     }
+
+    .services_content_holder {
+        margin-top: 2em;
+        padding: 0;
+    }
+
+
+    .how_card_holder {
+        padding: 0;
+    }
+
+    .how_card{
+        margin-top: 1.5em;
+    }
+
+    .price_text_holder{
+        padding: 0;
+    }
+
+    .price_element h4{
+        font-size: 20px;
+    }
+
+    .counter_item{
+        margin-top: 2em;
+    }
+
+    .counter_item h1 {
+        font-size: 50px;
+    }
+
+    .form_element textarea {
+        margin-top: 1em;
+    }
+
 }
