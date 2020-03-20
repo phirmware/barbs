@@ -38,15 +38,23 @@
                     <a href="#">Login</a>
                 </div>
             </div>
+
+            <span class="open_btn">&#9776;</span>
         </nav>
 
-        <div class="mobile_nav_holder">
-            <span class="closebtn ti-close"></span>
 
-            <div class="mobile_nav">
-                <a href="#" class="mobile_nav_item">
-                    <p>Home</p>
-                </a>
+        <div class="mobile_nav" id="mobileNav">
+            <div class="mobile_nav_content">
+                <a href="javascript:void(0)" class="close_btn">&times;</a>
+                <div class="nav_inner w-100">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Signup</a>
+                    <a href="#" class="default_btn">Login</a>
+                </div>
+
             </div>
         </div>
 
@@ -168,8 +176,9 @@
                             <span>1</span>
                         </div>
                         <h4 class="green_text v_align pb-2">Sign up</h4>
-                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus cupiditate ea
-                            corrupti, quo accusantium, assumenda. 
+                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus
+                            cupiditate ea
+                            corrupti, quo accusantium, assumenda.
                         </p>
                     </div>
                 </div>
@@ -181,8 +190,9 @@
                             <span>2</span>
                         </div>
                         <h4 class="green_text v_align pb-2">Sign up</h4>
-                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus cupiditate ea
-                            corrupti, quo accusantium, assumenda. 
+                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus
+                            cupiditate ea
+                            corrupti, quo accusantium, assumenda.
                         </p>
                     </div>
                 </div>
@@ -194,8 +204,9 @@
                             <span>3</span>
                         </div>
                         <h4 class="green_text v_align pb-2">Sign up</h4>
-                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus cupiditate ea
-                            corrupti, quo accusantium, assumenda. 
+                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus
+                            cupiditate ea
+                            corrupti, quo accusantium, assumenda.
                         </p>
                     </div>
                 </div>
@@ -256,21 +267,30 @@
             </div>
             <div class="col-md-4">
                 <div class="counter_item v_align">
-                    <h1 class="demo green_text"></h1>
-                    <p class="green_text">Barbers registered.</p>
+                    <h1 class="number green_text"></h1>
+                    <p class="green_text">Satisfied customers</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="counter_item v_align">
-                    <h1 class="demo green_text"></h1>
-                    <p class="green_text">Barbers registered.</p>
+                    <h1 class="num_alt green_text"></h1>
+                    <p class="green_text">Users registered</p>
                 </div>
             </div>
         </div>
-        
+
     </section>
 
-    <section class="contact mt-5 mb-5 pt-5 pb-4">
+    <section class="cta pb-4">
+        <div class="cta_inner section_padding v_align">
+            <h3 class="green_text">Want to be attended by first class barbers?</h3>
+            <div class="btn_holder mt-4">
+                <a href="signup.html" class="default_btn">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact pt-5 pb-5">
         <div class="contact_inner section_padding">
             <h3>Contact Us</h3>
             <p>Leave us a message, we'll be in touch</p>
@@ -280,20 +300,20 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form_element mt-3">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="form_element mt-3">
-                               
-                                <input type="email" placeholder="Email">
+                                <input type="text" placeholder="Name" required>
                             </div>
                             <div class="form_element mt-3">
 
-                                <input type="tel" placeholder="Phone number">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form_element mt-3">
+
+                                <input type="tel" placeholder="Phone number" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form_element">
-                                <textarea placeholder="Message"></textarea>
+                                <textarea placeholder="Message" required></textarea>
 
                                 <div class="btn_holder">
                                     <button type="submit" class="default_btn mt-3">Send Message</button>
@@ -305,9 +325,66 @@
             </div>
         </div>
     </section>
+
+    <footer class="pt-5 pb-4">
+        <div class="section_padding">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer_about mt-4">
+                        <h4 class="green_text">Barbs</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint sed eius excepturi
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_social mt-4">
+                        <h4 class="green_text">We are social</h4>
+                        <div class="socials_holder">
+                            <a  href="#" class="social_item">
+                                <i class="ti-instagram"></i>
+                            </a>
+                            <a href="#" class="social_item ml-2">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                             <a href="#" class="social_item ml-2">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_contact mt-4">
+                        <h4 class="green_text">Contact</h4>
+                        <div class="">
+                            <p><span class="green_text">Email</span> : tekena@ispace.com</p>
+                        </div>
+                        <div class="">
+                            <p><span class="green_text">Phone</span> : 07085840301</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_newsletter mt-4">
+                        <p class="green_text">Stay in the loop and get updates about our products and offers</p>
+                        <form action="" method="post">
+                            <div class="form_element">
+                                <input type="email"  placeholder="Enter your email" required>
+                            </div>
+                            <div class="btn_holder mt-2">
+                                <button type="submit" class="default_btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
 <script src="assets/libs/jquery/jquery.min.js"></script>
-<script src="assets/libs/Animated-Number-Counter-Plugin-For-jQuery-animationCounter-js/Animated-Number-Counter-Plugin-For-jQuery-animationCounter-js/animationCounter.js"></script>
+<script
+    src="assets/libs/Animated-Number-Counter-Plugin-For-jQuery-animationCounter-js/Animated-Number-Counter-Plugin-For-jQuery-animationCounter-js/animationCounter.js">
+</script>
 <script src="assets/libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 

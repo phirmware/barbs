@@ -16,6 +16,22 @@ $(window).on("scroll", function() {
             txt:  " +"
         });
 
+        $(".number").animationCounter({
+            start: 0,
+            end: 200,
+            step: 10,
+            delay: 50,
+            txt:  " +"
+        });
+
+        $(".num_alt").animationCounter({
+            start: 0,
+            end: 60,
+            step: 2,
+            delay: 50,
+            txt:  " +"
+        });
+
 $(".show").on("click", function () {
     if($(".password").attr("type") == "password"){
         $(".password").attr("type", "text");
@@ -25,4 +41,16 @@ $(".show").on("click", function () {
     }
 });
 
+$(".open_btn").on("click", function (){
+    $(".mobile_nav").fadeIn("4000", function (){
+        $(".mobile_nav").css("display", "flex");
+    }); 
+});
+
+$(".close_btn").on("click", function (){
+    $(".mobile_nav").fadeOut("3000", function (){
+        $(".mobile_nav").css("display", "none");
+    });
+})
+  
   
