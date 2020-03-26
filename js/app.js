@@ -8,31 +8,30 @@ $(window).on("scroll", function() {
     }
 });
 
-        $(".demo").animationCounter({
-            start: 0,
-            end: 50,
-            step: 2,
-            delay: 50,
-            txt:  " +"
-        });
 
-        $(".number").animationCounter({
-            start: 0,
-            end: 200,
-            step: 10,
-            delay: 50,
-            txt:  " +"
-        });
-
-        $(".num_alt").animationCounter({
-            start: 0,
-            end: 60,
-            step: 2,
-            delay: 50,
-            txt:  " +"
-        });
-
-$(".show").on("click", function () {
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      animateOut: 'fadeOut',
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+});
+ 
+$(".change").on("click", function () {
     if($(".password").attr("type") == "password"){
         $(".password").attr("type", "text");
     }
@@ -42,15 +41,7 @@ $(".show").on("click", function () {
 });
 
 $(".open_btn").on("click", function (){
-    $(".mobile_nav").fadeIn("4000", function (){
-        $(".mobile_nav").css("display", "flex");
-    }); 
+    $(".mobile_nav").toggleClass("slide");
 });
 
-$(".close_btn").on("click", function (){
-    $(".mobile_nav").fadeOut("3000", function (){
-        $(".mobile_nav").css("display", "none");
-    });
-})
-  
-  
+ 

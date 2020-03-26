@@ -1,9 +1,9 @@
 :root {
     --bg_green: #daffed;
     --primary_green: #004d29;
-    --secondary_green: #69f0ae;
-    --header_font: 'Sen', sans-serif;
-    --text_font: 'Poppins', sans-serif;
+    --dark_bg: #353535;
+    --header_font: 'Roboto Mono', monospace;
+    --text_font: 'Nunito', sans-serif;
 }
 
 html {
@@ -46,12 +46,12 @@ a:hover {
 
 .default_btn {
     padding: 0.6em 1.5em;
-    background: var(--primary_green);
+    background: darkslategray;
     font-size: 20px;
     color: #f5f5f5;
     transition: all 0.3s ease;
     border: 0;
-    box-shadow: 10px 7px 0px 0px rgb(86, 137, 125, 0.5);
+    box-shadow: 6px 2px 12px 7px rgba(0, 0, 0, 0.3);
 }
 
 .default_btn:hover {
@@ -65,7 +65,7 @@ a:hover {
 
 .fixed_nav {
     position: fixed;
-    background: #fff;
+    background: var(--dark_bg);
     z-index: 9999;
     width: 100%;
     box-shadow: 6px 2px 12px 7px rgba(0, 0, 0, 0.3);
@@ -73,14 +73,14 @@ a:hover {
 }
 
 .fixed_nav .nav_link_holder .nav_link a {
-    color: var(--primary_green);
+    color: var(--bg_green);
 }
 
 .top {
     position: fixed;
     right: 30px;
     bottom: 50px;
-    background-color: var(--primary_green);
+    background-color: var(--dark_bg);
     padding: 1em;
     opacity: 0;
     z-index: 999;
@@ -88,21 +88,27 @@ a:hover {
 }
 
 .top i {
-    color: #fff;
+    color: var(--bg_green);
     font-size: 25px;
 }
 
 .show {
-    opacity: 1 !important;
+    opacity: 1;
+}
+
+.slide{
+    width: 100% !important;
 }
 
 .logo{
     display: none;
+    
 }
 
 /*navigation*/
 nav {
     padding: 1em;
+    background: var(--dark_bg);
 }
 
 .nav_link_holder {
@@ -115,51 +121,50 @@ nav {
 }
 
 .nav_link_holder .nav_link a {
-    color: #f5f5f5;
+    color: var(--bg_green);
     font-size: 18px;
 }
 
 /***mobile navigation**/
 .mobile_nav{
-    width: 100%;
+    width: 0%;
     position: fixed;
-    height: 100vh;
-    background-color: rgba(0,0,0, 0.9);
-    top: 0;
-    left: 0;
-   display: none;
+    height: 60vh;
+    top: 3.8em;
+    background-color: var(--dark_bg);
     overflow-x: hidden;
     z-index: 99999;
-}
-
-.mobile_nav_content{
-    position: relative;
-   display: flex;
-   align-items: center;
-    width: 100%;
-    text-align: center;
-    padding: 0 30px;
+    transition: all 0.4s ease-in;
 }
 
 
 .mobile_nav_content a{
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 20px;
-    color: #f5f5f5;
     display: block;
+    color: var(--bg_green);
 }
 
-.mobile_nav .close_btn{
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+.nav_inner{
+    text-align: left;
 }
+
+.nav_inner ul{
+    padding: 2em 0.5em;
+}
+
+
+.nav_inner ul li{
+    border-top: 1px solid var(--primary_green);
+    width: 100%;
+    list-style: none;
+   
+}
+
 
 .open_btn{
     float: right;
-    font-size: 30px;
+    font-size: 20px;
     display: none;
     cursor: pointer;
     color: var(--primary_green);
@@ -174,10 +179,39 @@ nav {
 /*hero*/
 .hero {
     min-height: 90vh;
-    background: url("../assets/images/signup_bg.png");
+}
+
+.hero_page_bg{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 80vh;
+}
+
+.hero_page_bg{
+    background-image: url("../assets/images/cta.png");
+}
+
+.alt_bg{
+    background-image: url("../assets/images/hero_bg.png");
+}
+
+
+.hero_page_inner{
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.hero_page_inner h1{
+    font-family: 'Monoton', cursive !important;
+    font-size: 60px;
+    color: var(--bg_green);
+}
+
+.hero_page_inner p{
+    color: #fff;
+    font-size: 23px;
 }
 
 .hero_text_holder {
@@ -200,19 +234,42 @@ nav {
     font-size: 20px;
 }
 
+.hero_fade{
+    animation-delay: 0.7s;
+}
+
+.fa-star{
+    color: gold;
+}
+
 /**about section***/
 .about_text_holder {
     padding: 0 1.2em;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
 }
 
-.services {
+.carousel_holder{
+    padding: 1.5em;
+}
+
+/*how it works*/
+.how{
     background-color: var(--bg_green);
+     
 }
 
-.services_content_holder {
-    padding: 0 1em;
+.service_card_content {
+    padding:1.3em;
 }
+
+.service_card {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
 
 .service_icon {
     margin: 0 auto;
@@ -232,6 +289,30 @@ nav {
 }
 
 /**price list**/
+.price_card{
+    background: url("../assets/images/bg_1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    margin: 1em 1.5em;
+    border-radius: 20px;
+}
+
+.price_card_content{
+    color: var(--bg_green);
+    padding: 1em;
+}
+
+.price_card_content h1{
+    font-size: 40px;
+}
+
+.price_details{
+    display: flex;
+    font-size: 20px;
+}
+
 .price_text_holder {
     padding: 2em;
 }
@@ -255,23 +336,26 @@ nav {
     padding: 1em;
 }
 
+
+/**barber reatings**/
+.barber_text_holder{
+    min-height: 60vh;
+}
+
+.barber_img_holder{
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+.testimonial_content{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0.3em;
+}
+
 /***how it works***/
-.how_card {
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
-    padding: 0 0.5em;
-}
-
-.how_card:hover .num_holder {
-    background-color: var(--primary_green);
-}
-
-.how_card:hover .num_holder span {
-    color: #f5f5f5;
-}
-
-.how_card_holder {
-    padding: 0 3em;
-}
 
 .how_card_content {
     padding: 1em;
@@ -279,11 +363,10 @@ nav {
 
 .num_holder {
     margin: 0 auto;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: transparent;
-    border: 2px solid var(--primary_green);
+    background-color: var(--primary_green);
     padding: 1em;
     display: flex;
     align-items: center;
@@ -292,8 +375,8 @@ nav {
 }
 
 .num_holder span {
-    color: var(--primary_green);
-    font-size: 25px;
+    color: #f5f5f5;
+    font-size: 35px;
 }
 
 
@@ -306,21 +389,36 @@ nav {
 }
 
 /***cta & contact**/
-.cta{
-    min-height: 35vh;
+.cta,
+.cta_alt{
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact,
-.cta {
-    background-color: var(--bg_green);
+.cta_alt,
+.cta{
+    background: url("../assets/images/cta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cta_alt_inner,
+.cta_inner{
+    color: #f5f5f5;
+}
+
+.testimonial,
+.contact{
+    background: var(--bg_green);
 }
 
 .contact .form_element input,
 .footer_newsletter .form_element input{
-    border-bottom: 2px solid var(--primary_green);
+    border: 2px solid var(--primary_green);
 }
 
 .contact .form_element textarea {
@@ -330,7 +428,8 @@ nav {
 
 /**footer***/
 footer{
-    background-color: floralwhite;
+    background-color: var(--dark_bg);
+    color: #f5f5f5;
 }
 
 .footer_social{
@@ -345,14 +444,15 @@ footer{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--bg_green);
+    background-color: transparent;
     padding: 1em;
     display: flex;
+    border: 1px solid var(--bg_green);
     align-items: center;
 }
 
 .social_item i{
-    color: var(--primary_green);
+    color: var(--bg_green);
     font-size: 20px;
 }
 
@@ -422,23 +522,42 @@ footer{
         padding-left: 2em;
     }
 
+    .reverse-column-order {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-direction: column-reverse;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+	}
+
     .nav_link_holder {
         display: none;
+    }
+
+    nav{
+        min-height: 3.8em;
+        padding-bottom: 20px;
     }
 
     .logo{
         display: block;
         float: left;
-        font-size: 22px;
-        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .logo a,
+    .open_btn{
+        color: var(--bg_green);
     }
 
     .default_btn {
         font-size: 18px;
     }
 
-    .hero_text h1 {
-        font-size: 50px;
+    .hero_page_inner h1 {
+        font-size: 40px;
     }
 
     .hero_text p {
@@ -451,6 +570,10 @@ footer{
 
     .open_btn{
         display: block;
+    }
+
+    .carousel_holder{
+        padding: 0;
     }
 
     .about_text_holder {
@@ -480,6 +603,24 @@ footer{
         margin-top: 1.5em;
     }
 
+    .barber_img_holder{
+        width: 100%;
+        margin: 0;
+    }
+
+    .barber_img_holder img{
+       width: 100%;
+    }
+    
+    .barber_text_holder{
+        margin-top: 35px;
+    }
+
+    .price_card{
+        margin: 0.5em;
+    }
+    
+
     .price_text_holder{
         padding: 0;
     }
@@ -500,7 +641,12 @@ footer{
         font-size: 25px;
     }
 
-    .form_element textarea {
+    .testimonial_content{
+        width: 100%;
+    }
+
+    .form_element textarea,
+    .service_card {
         margin-top: 1em;
     }
 

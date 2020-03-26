@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/libs/animate.css/animate.css">
     <link rel="stylesheet" href="assets/libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Nunito|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/libs/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Barbs - Home</title>
@@ -16,10 +20,10 @@
         <i class="ti-angle-up"></i>
     </a>
 
-    <section class="hero">
-        <nav class="section_padding">
+    <nav>
+        <div class="section_padding">
             <div class="logo">
-                <a href="#" class="green_text">Barbs</a>
+                <a href="#">Barbs</a>
             </div>
             <div class="nav_link_holder">
                 <div class="nav_link">
@@ -42,54 +46,112 @@
                 </div>
             </div>
 
-            
-
-            <span class="open_btn">&#9776;</span>
-        </nav>
-
-
-        <div class="mobile_nav" id="mobileNav">
-            <div class="mobile_nav_content">
-                <a href="javascript:void(0)" class="close_btn">&times;</a>
-                <div class="nav_inner w-100">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Signup</a>
-                    <a href="#" class="default_btn">Login</a>
-                </div>
-
-            </div>
         </div>
+        <span class="open_btn">&#9776;</span>
+    </nav>
+    <section class="hero" id="hero">
 
-        <div class="section_padding" id="hero">
-            <div class="hero_text_holder">
-                <div class="hero_text">
-                    <h1>Welcome to Barbs</h1>
-                    <p>Connecting you to the most creative barbers around you</p>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero_page_bg ">
+                        <div class="hero_page_inner container">
+                            <div class="animated fadeInLeft hero_fade w-100">
+                                <h1 claas="">Welcome to Barbs</h1>
+                                <p>Connecting you to the most creative barbers around you</p>
+                                <div class="btn_holder mt-4">
+                                    <a href="#" class="default_btn">GET STARTED</a>
+                                </div>
+                            </div>
 
-                    <div class="btn_holder mt-4">
-                        <a href="#" class="default_btn">GET STARTED</a>
+                        </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="hero_page_bg alt_bg">
+                        <div class="hero_page_inner container">
+                            <div class="animated fadeInLeft hero_fade w-100">
+                                <h1 claas="">Where barbers and customers meet</h1>
+                                <p>The one-stop marketplace for hair stylists</p>
+                                <div class="btn_holder mt-4">
+                                    <a href="#" class="default_btn">GET STARTED</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero_page_bg ">
+                        <div class="hero_page_inner container">
+                            <div class="animated fadeInLeft hero_fade w-100">
+                                <h1 claas="">Welcome to Barbs</h1>
+                                <p>Connecting you to the most creative barbers around you</p>
+                                <div class="btn_holder mt-4">
+                                    <a href="#" class="default_btn">GET STARTED</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        </div>
+
+        <div class="mobile_nav" id="mobileNav">
+            <div class="mobile_nav_content w-100">
+
+                <div class="nav_inner w-100">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Signup</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
         </div>
+
     </section>
 
     <section class="section_padding mt-4 pt-5 pb-5">
-        <h2 class="section_head green_text">About Us</h2>
-        <div class="row">
+        <h2 class="section_head green_text mb-4">About Us</h2>
+        <div class="row pt-3">
             <div class="col-md-6">
                 <div class="carousel_holder">
-                    <div class="carousel-wrap">
-                        <div class="owl-carousel">
-                            <div class="carousel-item">
-                                <img src="assets/images/signup_bg.jpg" class="w-100" alt="">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="assets/images/signup_bg.jpg" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/signup_bg.jpg" class="w-100" alt="">
+                                <img class="d-block w-100" src="assets/images/bg_1.jpg" alt="Second slide">
                             </div>
                         </div>
                     </div>
@@ -97,28 +159,95 @@
             </div>
             <div class="col-md-6">
                 <div class="about_text_holder">
-                    <h3>Bringing the best barbers to your doorstep</h3>
-                    <p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis autem numquam
-                        odio at est
-                        laborum aspernatur sed nihil, aliquam labore natus, nesciunt consectetur in rem. Doloremque,
-                        libero? Blanditiis, sequi ab.
-                    </p>
-                    <div class="btn_holder mt-4">
-                        <a href="#" class="default_btn">Learn more</a>
+                    <div class="">
+                        <h3>Bringing the best barbers to your doorstep</h3>
+                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis autem
+                            numquam
+                            odio at est
+                            laborum aspernatur sed nihil, aliquam labore natus, nesciunt consectetur in rem. Doloremque,
+                            libero? Blanditiis, sequi ab.
+                        </p>
+                        <div class="btn_holder mt-4">
+                            <a href="#" class="default_btn">Learn more</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="how mt-4 pt-5 pb-4">
+        <div class="section_padding">
+            <h2 class="mb-4">How it works</h2>
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <div class="num_holder mb-3">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="how_text_holder">
+                        <h3 class="text_green">Sign up</h4>
+                            <p>
+                                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et obcaecati
+                                aspernatur,
+                                eaque commodi, doloribus optio accusamus neque, reiciendis tempora officiis. Inventore
+                                itaque deserunt nobis vero cupiditate quae? Cumque, temporibus.
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row reverse-column-order">
+                <div class="col-md-6 mt-4 pb-4">
+                    <div class="how_text_holder">
+                        <h3 class="text_green">Sign up</h4>
+                            <p>
+                                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et obcaecati
+                                aspernatur,
+                                eaque commodi, doloribus optio accusamus neque, reiciendis tempora officiis. Inventore
+                                itaque deserunt nobis vero cupiditate quae? Cumque, temporibus.
+                            </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 pb-4">
+                    <div class="num_holder mb-3">
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <div class="num_holder mb-3">
+                        <span>3</span>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="how_text_holder">
+                        <h3 class="text_green">Sign up</h4>
+                            <p>
+                                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et obcaecati
+                                aspernatur,
+                                eaque commodi, doloribus optio accusamus neque, reiciendis tempora officiis. Inventore
+                                itaque deserunt nobis vero cupiditate quae? Cumque, temporibus.
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <section class="services section_padding mt-4 pt-5 pb-5">
-        <h2 class="v_align green_text">Services</h2>
-        <p class="v_align">Some of the services our barbers offer</p>
+        <h2 class="green_text">Services</h2>
+        <p class="">Some of the services our barbers offer</p>
 
         <div class="row pt-3">
             <div class="col-md-4">
-                <div class="services_content_holder">
-                    <div class="services_content">
+                <div class="service_card">
+                    <div class="service_card_content">
                         <div class="service_icon">
                             <i class="ti-cut"></i>
                         </div>
@@ -134,8 +263,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="services_content_holder">
-                    <div class="services_content">
+                <div class="service_card">
+                    <div class="service_card_content">
                         <div class="service_icon">
                             <i class="ti-cut"></i>
                         </div>
@@ -151,8 +280,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="services_content_holder">
-                    <div class="services_content">
+                <div class="service_card">
+                    <div class="service_card_content">
                         <div class="service_icon">
                             <i class="ti-cut"></i>
                         </div>
@@ -170,125 +299,272 @@
         </div>
     </section>
 
-    <section class=" mt-5 pt-4 mb-5 section_padding">
-        <h2 class="green_text pb-5">How it works</h2>
+    <section class="cta_alt mt-4 mb-4">
+        <div class="cta_alt_inner section_padding v_align">
+            <h3>Are you a first-class barber?</h3>
+            <p>Register and get customers online today.</p>
+            <div class="btn_holder mt-4">
+                <a href="signup.html" class="default_btn">GET STARTED</a>
+            </div>
+        </div>
+    </section>
 
-        <div class="how_card_holder row">
-            <div class="col-md-4">
-                <div class="how_card">
-                    <div class="how_card_content">
-                        <div class="num_holder mb-3">
-                            <span>1</span>
+    <section class="price section_padding mt-5 mb-5">
+        <h1 class="green_text">Pricing</h1>
+        <p>Various options and their pricing</p>
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <div class="price_card">
+                            <div class="price_card_content">
+                                <h2 class="v_align">Barbing and shaving</h2>
+                                <div class="price_details">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Barbing</p>
+                                </div>
+                                <div class="price_details">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Beard Shave/Trim</p>
+                                </div>
+                                <div class="price_details">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Hair Treatment(optional)</p>
+                                </div>
+
+                                <div class="mt-2">
+                                    <h1 class="v_align">$40</h1>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="green_text v_align pb-2">Sign up</h4>
-                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus
-                            cupiditate ea
-                            corrupti, quo accusantium, assumenda.
-                        </p>
+                    </div>
+                    <div class="owl-item">
+                        <div class="price_card">
+                            <div class="price_card_content">
+                                <h2 class="v_align">General Trim</h2>
+                                <div class="price_details mt-4">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Hair Trim</p>
+                                </div>
+                                <div class="price_details">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Beard Trim</p>
+                                </div>
+                                <div class="price_details">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Hair Treatment(optional)</p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h1 class="v_align">$30</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="price_card">
+                            <div class="price_card_content">
+                                <h2 class="v_align">Shaving only</h2>
+                                <div class="price_details mt-5">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Beard shave</p>
+                                </div>
+
+                                <div class="price_details">
+                                    <span class="ti-check-box pt-1 mr-3"></span>
+                                    <p>Beard Treatment(optional)</p>
+                                </div>
+
+                                <div class="mt-5">
+                                    <h1 class="v_align">$40</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="mt-4 pt-4 pb-4 mb-4 barbers section_padding">
+        <h2 class="green_text">Our well known barbers</h2>
+        <p>Some of our highly rated barbers</p>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3 pt-5" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="barber_img_holder">
+                                <img src="assets/images/barber(2).png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="barber_text_holder">
+                                <h2>Fortune Kun</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at dicta earum
+                                    voluptatum sint, voluptate illo cumque ipsa molestias! Corrupti doloremque hic
+                                    consequatur quaerat, accusamus animi laborum maxime ex? Minima.
+                                </p>
+                                <div class="rating_holder">
+                                    <span>Rating: </span>
+                                    <p id="">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class="btn_holder mt-4">
+                                    <a href="#" class="default_btn">Signup and meet Fortune</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="barber_img_holder">
+                                <img src="assets/images/barber(1).png" class="" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="barber_text_holder">
+                                <h2>Jeffery whyte</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at dicta earum
+                                    voluptatum sint, voluptate illo cumque ipsa molestias! Corrupti doloremque hic
+                                    consequatur quaerat, accusamus animi laborum maxime ex? Minima.
+                                </p>
+                                <div class="rating_holder">
+                                    <span>Rating: </span>
+                                    <p id="">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class="btn_holder mt-4">
+                                    <a href="#" class="default_btn">Signup and meet Jeffery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="barber_img_holder">
+                                <img src="assets/images/barber(3).png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="barber_text_holder">
+                                <h2>John Doe</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at dicta earum
+                                    voluptatum sint, voluptate illo cumque ipsa molestias! Corrupti doloremque hic
+                                    consequatur quaerat, accusamus animi laborum maxime ex? Minima.
+                                </p>
+                                <div class="rating_holder">
+                                    <span>Rating: </span>
+                                    <p id="">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                                <div class="btn_holder mt-4">
+                                    <a href="#" class="default_btn">Signup and meet John</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="how_card">
-                    <div class="how_card_content">
-                        <div class="num_holder mb-3">
-                            <span>2</span>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="testimonial section_padding mt-4 pt-5 pb-5">
+        <h2 class="green_text">Word from some of our customers.</h2>
+        <div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial_holder">
+                        <div class="testimonial_content">
+                            <h1>"</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repellat labore dolores in
+                                corporis illo, odio quos molestias beatae a doloribus harum! Incidunt, laborum cupiditate
+                                magni cumque nemo deleniti explicabo.
+                            </p>
+                            <div class="mt-2">
+                                <span class="green_text">John Doe</span>
+                                <p>Developer, Cregital Nigeria</p>
+                            </div>
                         </div>
-                        <h4 class="green_text v_align pb-2">Sign up</h4>
-                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus
-                            cupiditate ea
-                            corrupti, quo accusantium, assumenda.
-                        </p>
+                      
+
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="how_card">
-                    <div class="how_card_content">
-                        <div class="num_holder mb-3">
-                            <span>3</span>
+                <div class="carousel-item">
+                    <div class="testimonial_holder">
+                        <div class="testimonial_content">
+                            <h1>"</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repellat labore dolores in
+                                corporis illo, odio quos molestias beatae a doloribus harum! Incidunt, laborum cupiditate
+                                magni cumque nemo deleniti explicabo.
+                            </p>
+                            <div class="mt-2">
+                                <span class="green_text">John Doe</span>
+                                <p>Developer, Cregital Nigeria</p>
+                            </div>
                         </div>
-                        <h4 class="green_text v_align pb-2">Sign up</h4>
-                        <p class="v_align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus
-                            cupiditate ea
-                            corrupti, quo accusantium, assumenda.
-                        </p>
+                      
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial_holder">
+                        <div class="testimonial_content">
+                            <h1>"</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repellat labore dolores in
+                                corporis illo, odio quos molestias beatae a doloribus harum! Incidunt, laborum cupiditate
+                                magni cumque nemo deleniti explicabo.
+                            </p>
+                            <div class="mt-2">
+                                <span class="green_text">John Doe</span>
+                                <p>Developer, Cregital Nigeria</p>
+                            </div>
+                        </div>
+                      
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class=" section_padding mt-4 pt-5 pb-4">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="price_img_holder">
-                    <img src="assets/images/undraw_hiring_cyhs.svg" alt="" class="w-100">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="price_text_holder">
-                    <h2 class="green_text v_align">Price List</h2>
-
-                    <div class="mt-5">
-                        <div class="price_element mt-4">
-                            <h4 class="green_text">Haircut</h4>
-                            <hr>
-                            <span>$40</span>
-                        </div>
-                        <div class="price_element mt-4">
-                            <h4 class="green_text">Shave</h4>
-                            <hr>
-                            <span>$40</span>
-                        </div>
-                        <div class="price_element mt-4">
-                            <h4 class="green_text">Haircut + Shave</h4>
-                            <hr>
-                            <span>$40</span>
-                        </div>
-                        <div class="price_element mt-4">
-                            <h4 class="green_text">Trim</h4>
-                            <hr>
-                            <span>$40</span>
-                        </div>
-                        <div class="price_element mt-4">
-                            <h4 class="green_text">Beard Trim</h4>
-                            <hr>
-                            <span>$40</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="counter_holder section_padding mt-3 pt-3 mb-3 pb-3">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="counter_item v_align">
-                    <h1 class="demo green_text"></h1>
-                    <p class="green_text">Barbers registered.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="counter_item v_align">
-                    <h1 class="number green_text"></h1>
-                    <p class="green_text">Satisfied customers</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="counter_item v_align">
-                    <h1 class="num_alt green_text"></h1>
-                    <p class="green_text">Users registered</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="cta pb-4">
+    <section class="cta pt-5 pb-4">
         <div class="cta_inner section_padding v_align">
-            <h3 class="green_text">Want to be attended by first class barbers?</h3>
+            <h3 class="">Want to be attended by first class barbers?</h3>
+            <p>Register and get door-step treatment from quality barbers</p>
             <div class="btn_holder mt-4">
                 <a href="signup.html" class="default_btn">GET STARTED</a>
             </div>
@@ -334,46 +610,40 @@
     <footer class="pt-5 pb-4">
         <div class="section_padding">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_about mt-4">
-                        <h4 class="green_text">Barbs</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint sed eius excepturi
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3">
+
+                <div class="col-md-4">
                     <div class="footer_social mt-4">
-                        <h4 class="green_text">We are social</h4>
+                        <h4 class="">We are social</h4>
                         <div class="socials_holder">
-                            <a  href="#" class="social_item">
+                            <a href="#" class="social_item">
                                 <i class="ti-instagram"></i>
                             </a>
                             <a href="#" class="social_item ml-2">
                                 <i class="ti-twitter-alt"></i>
                             </a>
-                             <a href="#" class="social_item ml-2">
+                            <a href="#" class="social_item ml-2">
                                 <i class="ti-facebook"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="footer_contact mt-4">
-                        <h4 class="green_text">Contact</h4>
+                        <h4 class="">Contact</h4>
                         <div class="">
-                            <p><span class="green_text">Email</span> : tekena@ispace.com</p>
+                            <p><span class="">Email</span> : tekena@ispace.com</p>
                         </div>
                         <div class="">
-                            <p><span class="green_text">Phone</span> : 07085840301</p>
+                            <p><span class="">Phone</span> : 07085840301</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="footer_newsletter mt-4">
-                        <p class="green_text">Stay in the loop and get updates about our products and offers</p>
+                        <p class="">Stay in the loop and get updates about our products and offers</p>
                         <form action="" method="post">
                             <div class="form_element">
-                                <input type="email"  placeholder="Enter your email" required>
+                                <input type="email" placeholder="Enter your email" required>
                             </div>
                             <div class="btn_holder mt-2">
                                 <button type="submit" class="default_btn">Subscribe</button>
@@ -387,9 +657,7 @@
     </footer>
 </body>
 <script src="assets/libs/jquery/jquery.min.js"></script>
-<script
-    src="assets/libs/Animated-Number-Counter-Plugin-For-jQuery-animationCounter-js/Animated-Number-Counter-Plugin-For-jQuery-animationCounter-js/animationCounter.js">
-</script>
+<script src="assets/libs/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script src="assets/libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 
