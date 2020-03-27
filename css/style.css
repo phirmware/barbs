@@ -413,17 +413,21 @@ nav {
 
 .testimonial,
 .contact{
-    background: var(--bg_green);
+    background: #d3d3d3;
 }
 
-.contact .form_element input,
 .footer_newsletter .form_element input{
     border: 2px solid var(--primary_green);
 }
 
+.contact .form_element input,
+.contact .form_element textarea{
+    background: var(--bg_green);
+    border-radius: 30px;
+}
+
 .contact .form_element textarea {
-    border: 2px solid var(--primary_green);
-    min-height: 35vh;
+    height: 35vh;
 }
 
 /**footer***/
@@ -516,12 +520,7 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 996px) {
-    .section_padding {
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-
+@media screen and (max-width: 760px){
     .reverse-column-order {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -530,7 +529,20 @@ footer{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
 		-ms-flex-direction: column-reverse;
-	}
+    }
+    
+    .price_card{
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .section_padding {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+  
 
     .nav_link_holder {
         display: none;
@@ -616,9 +628,7 @@ footer{
         margin-top: 35px;
     }
 
-    .price_card{
-        margin: 0.5em;
-    }
+  
     
 
     .price_text_holder{
